@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2013 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<ScrollView 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout 
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+    <LinearLayout android:orientation="horizontal"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_margin="10dp">
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/label_device_address"
+                  android:textSize="18sp"/>
+        <Space android:layout_width="5dp"
+               android:layout_height="wrap_content"/>
+        <TextView android:id="@+id/device_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_margin="10dp">
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/label_state"
+                  android:textSize="18sp"/>
+        <Space android:layout_width="5dp"
+               android:layout_height="wrap_content"/>
+        <TextView android:id="@+id/connection_state"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="@string/disconnected"
+                  android:textSize="18sp"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_margin="10dp">
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/label_data"
+                  android:textSize="18sp"/>
+        <Space android:layout_width="5dp"
+               android:layout_height="wrap_content"/>
+        <TextView android:id="@+id/data_value"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="@string/no_data"
+                  android:textSize="18sp"/>
+    </LinearLayout>
+<!--     <ExpandableListView android:id="@+id/gatt_services_list" -->
+<!--             android:layout_width="match_parent" -->
+<!--             android:layout_height="wrap_content"/> -->
+
+	
+	<Button 
+		      android:id="@+id/button"
+		      android:layout_width="match_parent"
+		      android:layout_height="50dp"
+		      android:textSize="12dp"
+		      android:text="接收通知"
+		      android:visibility="gone"/>  
+	<LinearLayout 
+	    android:orientation="horizontal"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    >
+		<LinearLayout 
+		    android:orientation="vertical"
+		    android:layout_width="120dp"
+		    android:layout_height="match_parent"
+		    >
+		  <Button 
+		      android:id="@+id/button1"
+		      android:layout_width="120dp"
+		      android:layout_height="50dp"
+		      android:textSize="12dp"
+		      android:background="@drawable/background_corner"
+		      android:text="Normal Mode"/>  <!-- 正常模式 -->
+		   <Button 
+		      android:id="@+id/button2"
+		      android:layout_width="120dp"
+		      android:layout_height="50dp"
+		      android:layout_marginTop="5dp"
+		      android:textSize="12dp"
+		      android:background="@drawable/background_corner"
+		      android:text="Cancel Alarm"/> <!-- 取消声音报警 -->
+		   <Button 
+		      android:id="@+id/button3"
+		      android:layout_width="120dp"
+		      android:layout_height="50dp"
+		       android:layout_marginTop="5dp"
+		      android:textSize="12dp"
+		      android:background="@drawable/background_corner"
+		      android:text="Emergency Overdraft "/> <!-- 紧急透支 -->
+		      
+		 <Button 
+		      android:id="@+id/button4"
+		      android:layout_width="120dp"
+		      android:layout_height="50dp"
+		       android:layout_marginTop="5dp"
+		      android:textSize="12dp"
+		      android:background="@drawable/background_corner"
+		      android:text="Relay Operation Reason"/><!-- 继电器操作原因 -->
+		     
+		 </LinearLayout>
+	   <LinearLayout 
+		    android:orientation="vertical"
+		    android:layout_width="wrap_content"
+		    android:layout_height="match_parent"
+		    android:layout_marginLeft="30dp"
+		    >
+		      
+	       
+	        <Button 
+		      android:id="@+id/button5"
+		      android:layout_width="120dp"
+		      android:layout_height="50dp"
+		      android:textSize="12dp"
+		      android:background="@drawable/background_corner"
+		      android:text="Meter Balance "/><!-- 查询电表余额 -->
+		      <Button 
+		      android:id="@+id/button6"
+		      android:layout_width="120dp"
+		      android:layout_height="50dp"
+		      android:textSize="12dp"
+		      android:layout_marginTop="5dp"
+		      android:background="@drawable/background_corner"
+		      android:text="Active energy"/><!-- 正向有功总电能 -->
+		      <Button 
+		      android:id="@+id/button7"
+		      android:layout_width="120dp"
+		      android:layout_height="50dp"
+		       android:layout_marginTop="5dp"
+		      android:textSize="12dp"
+		      android:background="@drawable/background_corner"
+		      android:text="Monthly Freezing Information"/><!-- 月冻结电能信息 -->
+		      <Button 
+		      android:id="@+id/button8"
+		      android:layout_width="120dp"
+		      android:layout_height="50dp"
+		       android:layout_marginTop="5dp"
+		      android:textSize="12dp"
+		      android:background="@drawable/background_corner"
+		      android:text="Daily Freezing Information"/><!-- 日冻结电能信息 -->
+		      <Button 
+		      android:id="@+id/button9"
+		      android:layout_width="120dp"
+		      android:layout_height="50dp"
+		      android:textSize="12dp"
+		      android:text="月冻结预付费信息"
+		      android:visibility="gone"/>
+		      <Button 
+		      android:id="@+id/button10"
+		      android:layout_width="120dp"
+		      android:layout_height="50dp"
+		      android:textSize="12dp"
+		      android:text="日冻结预付费信息"
+		      android:visibility="gone"/>
+		      <Button 
+		      android:id="@+id/button11"
+		      android:layout_width="120dp"
+		      android:layout_height="50dp"
+		      android:textSize="12dp"
+		      android:text="月冻结特殊信息包"
+		      android:visibility="gone"/>
+		      
+		    
+		</LinearLayout>
+	</LinearLayout>
+	
+	 <LinearLayout 
+		    android:orientation="vertical"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    >
+	   
+	   <EditText 
+	       android:id="@+id/token"
+	       android:layout_width="match_parent"
+	       android:layout_height="50dp"
+	       android:hint="Input Token"/>
+	   <Button 
+		      android:id="@+id/button12"
+		      android:layout_width="100dp"
+		      android:layout_height="50dp"
+		      android:textSize="12dp"
+		      android:background="@drawable/background_corner"
+		      android:text="TOKEN"/>
+	</LinearLayout>
+
+</LinearLayout>
+</ScrollView>
